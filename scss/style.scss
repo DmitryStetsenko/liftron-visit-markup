@@ -1,0 +1,17 @@
+@import "./vars";
+@import "./mixins";
+@import "./fonts";
+@import "./common";
+@import "./sections/main";
+@import "./sections/about";
+@import "./sections/contacts";
+
+.section {
+    height: 100vh;
+    background-color: $color1;
+    position: relative;
+    overflow: hidden;
+    &_main {}
+    &_about {}
+    &_contacts {}
+}
