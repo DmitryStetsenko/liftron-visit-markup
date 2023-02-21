@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Square+Peg&display=swap");
+@font-face {
+  font-family: "Seasons";
+  src: url("../fonts/theseasons/TheSeasonsRegular.eot");
+  src: url("../fonts/theseasons/TheSeasonsRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/theseasons/TheSeasonsRegular.woff2") format("woff2"), url("../fonts/theseasons/TheSeasonsRegular.woff") format("woff"), url("../fonts/theseasons/TheSeasonsRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MoonTime";
+  src: url("../fonts/moontime/MoonTime-Regular.eot");
+  src: url("../fonts/moontime/MoonTime-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/moontime/MoonTime-Regular.woff2") format("woff2"), url("../fonts/moontime/MoonTime-Regular.woff") format("woff"), url("../fonts/moontime/MoonTime-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   font-size: 16px;
 }
@@ -75,7 +90,7 @@ a {
 .main__title {
   color: #E6DCC6;
   font-size: 70px;
-  font-family: "Gloock", serif;
+  font-family: "Seasons", serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -83,7 +98,7 @@ a {
 .main__slogan {
   color: #E6DCC6;
   font-size: 70px;
-  font-family: "Square Peg", cursive;
+  font-family: "MoonTime", cursive;
   font-weight: 400;
   margin-top: auto;
   text-shadow: 5px 2px 9px #E6DCC6;

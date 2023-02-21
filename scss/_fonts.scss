@@ -1,1 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Square+Peg&display=swap');
+@include addFont('../fonts/theseasons/TheSeasonsRegular', 'Seasons');
+@include addFont('../fonts/moontime/MoonTime-Regular', 'MoonTime');
+
+
