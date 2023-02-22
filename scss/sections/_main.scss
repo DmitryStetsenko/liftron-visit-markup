@@ -8,12 +8,12 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: left center;
+        object-position: right center;
     }
 }
 
 .main {
-    $p: 100px;
+    $p: $paddingBlock;
     width: 50%;
     padding: $p $p $p 0;
     height: 100%;
@@ -25,26 +25,19 @@
         flex-direction: column;
 
         height: 100%;
-        border-top: 2px solid $color2;
-        border-bottom: 2px solid $color2;
+        border-top: $mainBoder;
+        border-bottom: $mainBoder;
         padding: 40px 0;
     }
     &__item {
-        margin-bottom: 40px;
+        margin-bottom: $mbItem;
     }
     &__logo {}
     &__title-block {
         @include flex(center, center);
         flex-direction: column;
     }
-    &__title {
-        color: $color2;
-        font-size: $fontSizeH1;
-        font-family: 'Seasons', serif;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-    }
+    &__title {}
     &__subtitle {
         color: $color2;
         font-size: 20px;

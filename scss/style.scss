@@ -8,10 +8,18 @@
 
 .section {
     height: 100vh;
+    max-height: 1080px;
     background-color: $color1;
     position: relative;
     overflow: hidden;
     &_main {}
-    &_about {}
+    &_about {
+        $p: $paddingBlock;
+        background: url(./../img/about-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        padding: $p 0;
+    }
     &_contacts {}
 }

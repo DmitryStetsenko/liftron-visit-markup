@@ -27,4 +27,21 @@ a {
     max-width: 1440px;
     margin: 0 auto;
     height: 100%;
+    padding: 0 40px;
+}
+
+.title-main,
+.title-section {
+    color: $color2;
+    font-family: 'Seasons', serif;
+    font-weight: 400;
+}
+
+.title-main {
+    font-size: $fontSizeH1;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.title-section {
+    font-size: $fontSizeH2;
 }
