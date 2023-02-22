@@ -142,6 +142,13 @@ a {
   border-radius: 50px;
   font-weight: bold;
   font-size: 16px;
+  -webkit-transition: color 0.3s, background 0.3s;
+  -o-transition: color 0.3s, background 0.3s;
+  transition: color 0.3s, background 0.3s;
+}
+.main__learn-more:hover {
+  background: #E6DCC6;
+  color: #222222;
 }
 .main__slogan {
   color: #E6DCC6;

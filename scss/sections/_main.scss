@@ -57,6 +57,11 @@
         border-radius: 50px;
         font-weight: bold;
         font-size: 16px;
+        transition: color .3s, background .3s;
+        &:hover {
+            background: $color2;
+            color: $color4;
+        }
     }
     &__slogan {
         color: $color2;
