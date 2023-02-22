@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size: $fontSizeAll;
 }
 
 * {
@@ -9,7 +9,8 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    
 }
 
 ul, li {
@@ -19,6 +20,7 @@ ul, li {
 a {
     text-decoration: none;
     display: block;
+    color: $color3;
 }
 
 .container {

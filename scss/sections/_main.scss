@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 70%;
+    width: 50%;
     height: 100%;
     img {
         width: 100%;
@@ -29,20 +29,34 @@
         border-bottom: 2px solid $color2;
         padding: 40px 0;
     }
+    &__item {
+        margin-bottom: 40px;
+    }
     &__logo {}
     &__title {
         color: $color2;
-        font-size: 70px;
+        font-size: $fontSizeH1;
         font-family: 'Seasons', serif;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 4px;
     }
-    &__subtitle {}
-    &__learn-more {}
+    &__subtitle {
+        color: $color2;
+        font-size: 20px;
+        font-family: 'Seasons', serif;
+        letter-spacing: 1px;
+    }
+    &__learn-more {
+        padding: 15px 70px;
+        background: $color4;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 16px;
+    }
     &__slogan {
         color: $color2;
-        font-size: 70px;
+        font-size: $fontSizeSlogan;
         font-family: 'MoonTime', cursive;
         font-weight: 400;
         margin-top: auto;

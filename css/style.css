@@ -14,8 +14,24 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dmsans/DMSans-Regular.eot");
+  src: url("../fonts/dmsans/DMSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/dmsans/DMSans-Regular.woff2") format("woff2"), url("../fonts/dmsans/DMSans-Regular.woff") format("woff"), url("../fonts/dmsans/DMSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dmsans/DMSans-Bold.eot");
+  src: url("../fonts/dmsans/DMSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/dmsans/DMSans-Bold.woff2") format("woff2"), url("../fonts/dmsans/DMSans-Bold.woff") format("woff"), url("../fonts/dmsans/DMSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 * {
@@ -26,7 +42,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 ul, li {
@@ -36,6 +52,7 @@ ul, li {
 a {
   text-decoration: none;
   display: block;
+  color: #C0BEBB;
 }
 
 .container {
@@ -48,7 +65,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  width: 70%;
+  width: 50%;
   height: 100%;
 }
 .main-img img {
@@ -87,6 +104,9 @@ a {
   border-bottom: 2px solid #E6DCC6;
   padding: 40px 0;
 }
+.main__item {
+  margin-bottom: 40px;
+}
 .main__title {
   color: #E6DCC6;
   font-size: 70px;
@@ -95,9 +115,22 @@ a {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+.main__subtitle {
+  color: #E6DCC6;
+  font-size: 20px;
+  font-family: "Seasons", serif;
+  letter-spacing: 1px;
+}
+.main__learn-more {
+  padding: 15px 70px;
+  background: #222222;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+}
 .main__slogan {
   color: #E6DCC6;
-  font-size: 70px;
+  font-size: 50px;
   font-family: "MoonTime", cursive;
   font-weight: 400;
   margin-top: auto;
