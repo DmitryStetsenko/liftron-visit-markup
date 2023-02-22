@@ -21,7 +21,7 @@
     z-index: 100;
     background: $color1;
     &__content {
-        @include flex(flex-start, center);
+        @include flex(space-between, center);
         flex-direction: column;
 
         height: 100%;
@@ -33,6 +33,10 @@
         margin-bottom: 40px;
     }
     &__logo {}
+    &__title-block {
+        @include flex(center, center);
+        flex-direction: column;
+    }
     &__title {
         color: $color2;
         font-size: $fontSizeH1;
@@ -59,7 +63,6 @@
         font-size: $fontSizeSlogan;
         font-family: 'MoonTime', cursive;
         font-weight: 400;
-        margin-top: auto;
         text-shadow: 5px 2px 9px $color2;
     }
 }
