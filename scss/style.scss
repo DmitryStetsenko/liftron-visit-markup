@@ -6,12 +6,13 @@
 @import "./sections/main";
 @import "./sections/about";
 @import "./sections/contacts";
+@import "./sections/footer";
 
 .section {
     @include flex(flex-start, center);
     flex-direction: column;
-    
-    height: 100vh;
+
+        height: 100vh;
     max-height: 1080px;
     background-color: $color1;
     position: relative;
@@ -25,5 +26,10 @@
         background-position: center bottom;
         padding: $p 0;
     }
-    &_contacts {}
+    &_contacts {
+        $p: $paddingBlock;
+        padding: $p 0;
+        height: initial;
+    }
 }
+

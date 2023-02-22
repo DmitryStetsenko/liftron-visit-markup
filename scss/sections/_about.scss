@@ -2,6 +2,8 @@
     @include flex;
     flex-direction: column;
 
+    margin: 0 auto;
+    width: $aboutBlockWidth;
     height: 100%;
     background: $color1;
     padding: $paddingBlock;

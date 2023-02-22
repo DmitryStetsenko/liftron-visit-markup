@@ -1,0 +1,71 @@
+.contacts {
+    $imgWidth: 60%;
+    @include flex;
+
+    &__info {
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+
+        width: 100% - $imgWidth;
+        padding-right: 50px;
+    }
+    &__title {}
+    &__btn-contact {
+        padding: 15px 70px;
+        border-radius: 50px;
+        background: $color2;
+        color: $color4;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background .3s, color .3s;
+        cursor: pointer;
+        &:hover {
+            background: $color4;
+            color: $color2;
+        }
+    }
+    &__img {
+        width: 70%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+    }
+    &__data {}
+    &__item {
+        span {
+            min-width: 100px;
+            margin-bottom: 40px;
+        }
+        &:last-child {
+            span {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__block-text {
+        color: $color2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__phone-block {
+        @include flex;
+    }
+    &__phone {
+        a {}
+    }
+    &__email {
+        @include flex;
+        a {}
+    }
+    &__social {}
+}
+
+.social {
+    @include flex;
+    &__item {}
+    &__link {}
+}
