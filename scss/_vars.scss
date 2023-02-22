@@ -3,6 +3,11 @@ $color2: #E6DCC6;
 $color3: #C0BEBB;
 $color4: #222222;
 
+// sizes
+$mainBlockWidth: 50%;
+$mainImgBlockWidth: 100% - $mainBlockWidth;
+$headerBlockWidth: $mainBlockWidth;
+
 // border
 $mainBoder: 2px solid $color2;
 
@@ -12,6 +17,7 @@ $fontSizeSlogan: 50px;
 $fontSizeAll: 20px;
 
 // padding
+$paddingContainer: 40px;
 $paddingBlock: 100px; 
 
 // margin
