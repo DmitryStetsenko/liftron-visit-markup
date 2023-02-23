@@ -31,5 +31,11 @@
         padding: $p 0;
         height: initial;
     }
+    &_footer {
+        $p: $paddingBlock / 5;
+        height: initial;
+        padding: $p 0;
+        background: darken($color1, 10);
+    }
 }
 

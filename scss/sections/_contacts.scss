@@ -35,6 +35,8 @@
     }
     &__data {}
     &__item {
+        @include flex;
+
         span {
             min-width: 100px;
             margin-bottom: 40px;
@@ -51,21 +53,43 @@
         font-weight: bold;
     }
 
-    &__phone-block {
-        @include flex;
-    }
+    &__phone-block {}
     &__phone {
         a {}
     }
     &__email {
-        @include flex;
         a {}
     }
-    &__social {}
+    &__social {
+        @include flex(flex-start, center);
+    }
 }
 
 .social {
     @include flex;
-    &__item {}
-    &__link {}
+    $size: 30px;
+
+        &__item {
+            font-size: 18px;
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &_facebook {
+                font-size: 14px;
+            }
+        }
+        &__link {
+            @include flex(center, center);
+            
+            width: $size;
+            height: $size;
+            border-radius: 50%;
+            border: 1px solid $color2;
+            transition: background .3s, border-color .3s;
+            &:hover {
+                background: $color4;
+                border-color: $color4;
+            }
+        }
 }

@@ -1,7 +1,4 @@
 .footer {
-    padding: 20px 0;
-    background: darken($color1, 10);
-
     &-block {
         @include flex(space-between, center);
     }

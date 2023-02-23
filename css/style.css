@@ -296,6 +296,17 @@ a {
   -o-object-position: center top;
      object-position: center top;
 }
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
 .contacts__item span {
   min-width: 100px;
   margin-bottom: 40px;
@@ -308,28 +319,18 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 }
-.contacts__phone-block {
+.contacts__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.contacts__email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,10 +342,39 @@ a {
       -ms-flex-align: stretch;
           align-items: stretch;
 }
-.footer {
-  padding: 20px 0;
-  background: #0e1d2c;
+.social__item {
+  font-size: 18px;
+  margin-right: 10px;
 }
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__item_facebook {
+  font-size: 14px;
+}
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #E6DCC6;
+  -webkit-transition: background 0.3s, border-color 0.3s;
+  -o-transition: background 0.3s, border-color 0.3s;
+  transition: background 0.3s, border-color 0.3s;
+}
+.social__link:hover {
+  background: #222222;
+  border-color: #222222;
+}
+
 .footer-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,4 +440,9 @@ a {
 .section_contacts {
   padding: 100px 0;
   height: initial;
+}
+.section_footer {
+  height: initial;
+  padding: 20px 0;
+  background: #0e1d2c;
 }/*# sourceMappingURL=style.css.map */
