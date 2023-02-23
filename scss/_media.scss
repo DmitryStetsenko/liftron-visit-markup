@@ -24,6 +24,12 @@
     $mainImgBlockWidth: 100%;
     $bgColor: rgba($color1, .7);
     $p: 70px;
+    $paddingContainer: $p;
+
+    .container {
+        padding: 0 $paddingContainer;
+    }
+
 
     .section {
         &_about,
@@ -45,7 +51,7 @@
     
     .main {
         width: $mainBlockWidth;
-        padding: 0 0 $p;
+        padding: 0 $p $p;
         background: $bgColor;
     }
 
@@ -81,14 +87,18 @@
 
 @media (max-width: $bp3) {
     $p: 70px;
-    $paddingContainer: 30px;
+    $paddingContainer: 35px;
 
     .container {
         padding: 0 $paddingContainer;
     }
 
+    .main {
+        padding: 0 $p / 2 $p;
+    }
+
     .about {
-        padding: $p 0; 
+        padding: $p $p / 2; 
     }
 }
 
@@ -97,7 +107,8 @@
     $fontSizeH2: 40px;
     $fontSizeAll: 16px;
     $fontSizeSubTitle: 16px;
-    $paddingContainer: 15px;
+    $p: 70px;
+    $paddingContainer: $p / 4;
 
     :root {
         font-size: $fontSizeAll;
@@ -113,10 +124,15 @@
     .title-section {
         font-size: $fontSizeH2;
     }
-
+    
     .main {
+        padding: 0 $p / 4 $p;
         &__subtitle {
             font-size: $fontSizeSubTitle;
         }
+    }
+
+    .about {
+        padding: $p $p / 4; 
     }
 }
