@@ -78,3 +78,45 @@
         }
     }
 }
+
+@media (max-width: $bp3) {
+    $p: 70px;
+    $paddingContainer: 30px;
+
+    .container {
+        padding: 0 $paddingContainer;
+    }
+
+    .about {
+        padding: $p 0; 
+    }
+}
+
+@media (max-width: $bp4) {
+    $fontSizeH1: 50px;
+    $fontSizeH2: 40px;
+    $fontSizeAll: 16px;
+    $fontSizeSubTitle: 16px;
+    $paddingContainer: 15px;
+
+    :root {
+        font-size: $fontSizeAll;
+    }
+
+    .container {
+        padding: 0 $paddingContainer;
+    }
+
+    .title-main {
+        font-size: $fontSizeH1;
+    }
+    .title-section {
+        font-size: $fontSizeH2;
+    }
+
+    .main {
+        &__subtitle {
+            font-size: $fontSizeSubTitle;
+        }
+    }
+}

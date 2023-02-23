@@ -515,4 +515,29 @@ a {
         -ms-flex-order: 1;
             order: 1;
   }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 30px;
+  }
+  .about {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 450px) {
+  :root {
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  .title-main {
+    font-size: 50px;
+  }
+  .title-section {
+    font-size: 40px;
+  }
+  .main__subtitle {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
