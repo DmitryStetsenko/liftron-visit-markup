@@ -2,6 +2,8 @@
     $imgWidth: 60%;
     @include flex;
 
+    white-space: nowrap;
+
     &__info {
         @include flex(space-between, flex-start);
         flex-direction: column;
@@ -12,6 +14,7 @@
     &__title {}
     &__btn-contact {
         padding: 15px 70px;
+        margin: 40px 0;
         border-radius: 50px;
         background: $color2;
         color: $color4;

@@ -1,6 +1,11 @@
 .footer {
     &-block {
         @include flex(space-between, center);
+
+        &__copyright {
+            color: lighten($color1, 10);
+        }
+        &__logo {}
     }
     &-menu {
         $p: $paddingBlock;
@@ -17,8 +22,4 @@
             }
         }
     }
-    &__copyright {
-        color: lighten($color1, 10);
-    }
-    &__logo {}
 }
