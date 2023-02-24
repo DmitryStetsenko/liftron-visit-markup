@@ -1,0 +1,96 @@
+input,
+label,
+button,
+fieldset {
+    display: block;
+    border: none;
+    background: transparent;
+}
+
+fieldset,
+label,
+input,
+button {
+    width: 100%;
+}
+
+input, 
+button {
+    padding: 15px 30px;
+    border: 1px solid $color1;
+    border-radius: 50px;
+}
+
+
+.contact-form {
+    @include flex;
+
+    position: relative;
+    padding: 40px;
+    background: $color2;
+    max-width: 800px;
+    box-shadow: 2px 2px 5px rgba(black, .7);
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform .3s, opacity .3s;
+
+    &__info {
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+
+        width: 40%;
+        padding-right: 50px;
+    }
+    &__group {
+        margin: 40px 0;
+    }
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        color: $color4;
+        font-size: $fontSizeH2 / 2;
+    }
+    &__field {}
+    &__submit-btn {
+        cursor: pointer;
+        transition: background .3s, color .3s;
+        &:hover {
+            background: $color4;
+            color: $color2;
+        }
+    }
+
+    &__img {
+        width: 60%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__close-btn {
+        $size: 40px;
+        @include flex(center, center);
+
+        color: gray;
+        width: $size;
+        height: $size;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        transition: color .3s;
+        &:hover {
+            color: $color4;
+        }
+    }
+
+    &_show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

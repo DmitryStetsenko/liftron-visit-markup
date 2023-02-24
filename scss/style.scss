@@ -2,6 +2,10 @@
 @import "./mixins";
 @import "./fonts";
 @import "./common";
+
+@import "./components/modal";
+@import "./components/form";
+
 @import "./sections/header";
 @import "./sections/main";
 @import "./sections/about";
