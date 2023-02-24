@@ -2,24 +2,34 @@
     input,
     label,
     button,
+    textarea,
     fieldset {
-        display: block;
-        border: none;
-        background: transparent;
-        font-size: $fontSizeAll;
+        font-size: $fontSizeForm;
     }
     
     fieldset,
     label,
-    input {
+    input,
+    textarea {
         width: 100%;
     }
     
-    input, 
+    input,
+    textarea,
     button {
-        padding: 15px 30px;
+        padding: 10px 30px;
         border: 1px solid $color1;
+    }
+
+    input,
+    button {
         border-radius: 50px;
+    }
+
+    textarea {
+        height: 80px;
+        resize: none;
+        border-radius: 10px;
     }
 
     @include flex;

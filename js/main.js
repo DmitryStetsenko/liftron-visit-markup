@@ -3,17 +3,59 @@ const contactUsBtn = doc.querySelector('.contacts__btn-contact');
 
 const modalWindow = doc.querySelector('.modalWindows');
 const contactsForm = doc.forms.contactsForm;
+const formData = contactsForm.formGroup.elements;
+
 const closeFormBtn = contactsForm.querySelector('.contact-form__close-btn');
 
 
 toggleModalWindow();
-
-
+vlidateAndSendForm();
 
 
 
 
 // functions
+
+function vlidateAndSendForm() {
+    for(let field of formData) {
+        field.oninput = e => {
+            e.target.style = '';
+        }
+    }
+    
+    contactsForm.onsubmit = e => {
+        e.preventDefault();
+        let formValid = true;
+
+        for(let field of formData) {
+            const value = field.value.trim();
+
+            field.style = '';
+            if (!value) {
+                formValid = false;
+                field.style.background = '#ffbaad';
+            }
+
+        }
+
+        if (!formValid) {
+            return;
+        }
+
+        sendForm(contactsForm);
+    }
+}
+
+function clearFormFields() {
+    for(let field of formData) {
+        field.value = '';
+        field.style = '';
+    }
+}
+
+function sendForm(form) {
+    console.log(form);
+}
 
 function toggleModalWindow() {
     contactUsBtn.onclick = showModalWindow;

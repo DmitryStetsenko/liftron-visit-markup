@@ -49,8 +49,15 @@ body.no-scroll {
   overflow: hidden;
 }
 
-button {
+input,
+label,
+button,
+textarea,
+fieldset {
+  display: block;
   border: none;
+  background: transparent;
+  font-family: "DM Sans", serif;
 }
 
 ul, li {
@@ -71,7 +78,8 @@ a {
 }
 
 .title-main,
-.title-section {
+.title-section,
+.title-form {
   color: #E6DCC6;
   font-family: "Seasons", serif;
   font-weight: 400;
@@ -86,6 +94,10 @@ a {
 
 .title-section {
   font-size: 50px;
+}
+
+.title-form {
+  font-size: 30px;
 }
 
 .modalWindows {
@@ -149,22 +161,30 @@ a {
 .contact-form input,
 .contact-form label,
 .contact-form button,
+.contact-form textarea,
 .contact-form fieldset {
-  display: block;
-  border: none;
-  background: transparent;
-  font-size: 20px;
+  font-size: 16px;
 }
 .contact-form fieldset,
 .contact-form label,
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
 }
 .contact-form input,
+.contact-form textarea,
 .contact-form button {
-  padding: 15px 30px;
+  padding: 10px 30px;
   border: 1px solid #1B3652;
+}
+.contact-form input,
+.contact-form button {
   border-radius: 50px;
+}
+.contact-form textarea {
+  height: 80px;
+  resize: none;
+  border-radius: 10px;
 }
 .contact-form__info {
   display: -webkit-box;

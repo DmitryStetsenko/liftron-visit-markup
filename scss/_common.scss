@@ -17,8 +17,15 @@ body {
     
 }
 
-button {
+input,
+label,
+button,
+textarea,
+fieldset {
+    display: block;
     border: none;
+    background: transparent;
+    font-family: 'DM Sans', serif;
 }
 
 ul, li {
@@ -39,7 +46,8 @@ a {
 }
 
 .title-main,
-.title-section {
+.title-section,
+.title-form {
     color: $color2;
     font-family: 'Seasons', serif;
     font-weight: 400;
@@ -53,4 +61,7 @@ a {
 }
 .title-section {
     font-size: $fontSizeH2;
+}
+.title-form {
+    font-size: $fontSizeH3;
 }
