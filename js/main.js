@@ -31,7 +31,7 @@ function closeModalWindow() {
     toggleForm(false);
     setTimeout(() => {
         modalWindow.classList.remove('modalWindows_show');
-        bodyNoScroll(true);
+        bodyNoScroll(false);
     }, 100);
 }
 

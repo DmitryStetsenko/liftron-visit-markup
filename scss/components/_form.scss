@@ -1,28 +1,27 @@
-input,
-label,
-button,
-fieldset {
-    display: block;
-    border: none;
-    background: transparent;
-}
-
-fieldset,
-label,
-input,
-button {
-    width: 100%;
-}
-
-input, 
-button {
-    padding: 15px 30px;
-    border: 1px solid $color1;
-    border-radius: 50px;
-}
-
-
 .contact-form {
+    input,
+    label,
+    button,
+    fieldset {
+        display: block;
+        border: none;
+        background: transparent;
+        font-size: $fontSizeAll;
+    }
+    
+    fieldset,
+    label,
+    input {
+        width: 100%;
+    }
+    
+    input, 
+    button {
+        padding: 15px 30px;
+        border: 1px solid $color1;
+        border-radius: 50px;
+    }
+
     @include flex;
 
     position: relative;
@@ -50,10 +49,10 @@ button {
 
     &__title {
         color: $color4;
-        font-size: $fontSizeH2 / 2;
     }
     &__field {}
     &__submit-btn {
+        width: 100%;
         cursor: pointer;
         transition: background .3s, color .3s;
         &:hover {
@@ -84,6 +83,7 @@ button {
         right: 0;
         cursor: pointer;
         transition: color .3s;
+        z-index: 100;
         &:hover {
             color: $color4;
         }
