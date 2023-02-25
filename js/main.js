@@ -12,8 +12,6 @@ toggleModalWindow();
 validateAndSendForm();
 
 
-
-
 // functions
 
 function validateAndSendForm() {
@@ -29,9 +27,14 @@ function validateAndSendForm() {
 
         for(let field of formData) {
             const value = field.value.trim();
+            console.log(field.name);
 
             field.style = '';
             if (!value) {
+                formValid = false;
+                field.style.background = '#ffbaad';
+            }
+            if (field.name == 'email' && !value.includes('@')) {
                 formValid = false;
                 field.style.background = '#ffbaad';
             }
@@ -42,7 +45,18 @@ function validateAndSendForm() {
             return;
         }
 
-        sendForm(contactsForm);
+        successSendForm();
+        setTimeout(() => {
+            sendForm(contactsForm);
+            clearFormFields();
+            closeModalWindow();
+        }, 1000);
+    }
+}
+
+function successSendForm() {
+    for(let field of formData) {
+        field.style.background = '#adffbc';
     }
 }
 
