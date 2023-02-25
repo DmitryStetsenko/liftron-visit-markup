@@ -9,14 +9,14 @@ const closeFormBtn = contactsForm.querySelector('.contact-form__close-btn');
 
 
 toggleModalWindow();
-vlidateAndSendForm();
+validateAndSendForm();
 
 
 
 
 // functions
 
-function vlidateAndSendForm() {
+function validateAndSendForm() {
     for(let field of formData) {
         field.oninput = e => {
             e.target.style = '';
@@ -53,8 +53,12 @@ function clearFormFields() {
     }
 }
 
-function sendForm(form) {
-    console.log(form);
+async function sendForm(form) {
+    const data = new FormData(form);
+    const res = await fetch('send-email.php', {
+        method: 'POST',
+        body: data,
+    });
 }
 
 function toggleModalWindow() {

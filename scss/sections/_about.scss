@@ -15,6 +15,28 @@
     &__content {
         width: 100%;
         height: 100%;
-        border-bottom: $mainBoder;  
+        border-bottom: $mainBoder;
+        line-height: 1.7;
+    }
+    &__content-part {
+        margin-bottom: 20px;
+        color: $color2;
+    }
+    &__advantages {}
+}
+
+.advantages {
+    padding: 20px;
+    background: darken($color1, 5);
+    &__item {
+        margin-bottom: 20px;
+        span {
+            &:first-child {
+                margin-right: 10px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
