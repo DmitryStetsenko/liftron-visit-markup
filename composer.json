@@ -1,0 +1,11 @@
+{
+    "name": "professional/info.liftron.com.ua.local",
+    "authors": [
+        {
+            "name": "Dmitry Stetsenko"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.7"
+    }
+}
